@@ -3,11 +3,17 @@ import './App.css';
 
 function App() {
   const [activeSection, setActiveSection] = useState('home');
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const scrollToSection = (sectionId) => {
     setActiveSection(sectionId);
+    setIsMobileMenuOpen(false); // Close mobile menu when navigating
     const element = document.getElementById(sectionId);
     element.scrollIntoView({ behavior: 'smooth' });
+  };
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
   const skills = [
@@ -27,12 +33,18 @@ function App() {
       <nav className="navbar">
         <div className="nav-container">
           <h2 className="nav-logo">Sreenidhi Karanam</h2>
-          <ul className="nav-menu">
+          <div className="nav-toggle" onClick={toggleMobileMenu}>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <ul className={`nav-menu ${isMobileMenuOpen ? 'active' : ''}`}>
             <li className="nav-item">
               <button 
                 className={`nav-link ${activeSection === 'home' ? 'active' : ''}`}
                 onClick={() => {
                   setActiveSection('home');
+                  setIsMobileMenuOpen(false);
                   window.scrollTo({ top: 0, behavior: 'smooth' });
                 }}
               >
