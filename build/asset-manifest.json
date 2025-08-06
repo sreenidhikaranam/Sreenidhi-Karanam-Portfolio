@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/sreenidhi/static/css/main.ab47ca53.css",
+    "main.js": "/sreenidhi/static/js/main.ebf4cd91.js",
+    "static/js/453.078a732c.chunk.js": "/sreenidhi/static/js/453.078a732c.chunk.js",
+    "index.html": "/sreenidhi/index.html",
+    "main.ab47ca53.css.map": "/sreenidhi/static/css/main.ab47ca53.css.map",
+    "main.ebf4cd91.js.map": "/sreenidhi/static/js/main.ebf4cd91.js.map",
+    "453.078a732c.chunk.js.map": "/sreenidhi/static/js/453.078a732c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ab47ca53.css",
+    "static/js/main.ebf4cd91.js"
+  ]
+}
