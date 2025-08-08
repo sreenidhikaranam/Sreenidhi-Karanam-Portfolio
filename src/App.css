@@ -15,10 +15,12 @@ body {
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #f8f9fa;
 }
 
 .App {
   min-height: 100vh;
+  background: #f8f9fa;
 }
 
 /* Navigation */
@@ -45,7 +47,7 @@ body {
 .nav-logo {
   font-size: 1.8rem;
   font-weight: bold;
-  color: #6366f1;
+  color: #1f2937;
   text-decoration: none;
 }
 
@@ -68,10 +70,15 @@ body {
   position: relative;
 }
 
-.nav-link:hover,
-.nav-link.active {
+.nav-link:hover {
   color: #6366f1;
   background: rgba(99, 102, 241, 0.1);
+}
+
+.nav-link.active {
+  color: white;
+  background: #6366f1;
+  box-shadow: 0 2px 8px rgba(99, 102, 241, 0.3);
 }
 
 /* Hero Section */
@@ -102,7 +109,7 @@ body {
 }
 
 .highlight {
-  color: #000000;
+  color: #ffffff;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
@@ -138,14 +145,14 @@ body {
 }
 
 .btn-primary {
-  background: #fbbf24;
-  color: #1f2937;
+  background: #3b82f6;
+  color: white;
 }
 
 .btn-primary:hover {
-  background: #f59e0b;
+  background: #2563eb;
   transform: translateY(-2px);
-  box-shadow: 0 10px 25px rgba(251, 191, 36, 0.3);
+  box-shadow: 0 10px 25px rgba(59, 130, 246, 0.3);
 }
 
 .btn-secondary {
@@ -168,6 +175,7 @@ body {
 /* Sections */
 .section {
   padding: 5rem 0;
+  scroll-margin-top: 100px;
 }
 
 .container {
@@ -198,7 +206,12 @@ body {
 
 /* About Section */
 .about-section {
-  background: #f9fafb;
+  background: #ffffff;
+}
+
+/* Experience Section */
+.experience-section {
+  background: #ffffff;
 }
 
 .about-content {
@@ -240,13 +253,15 @@ body {
 }
 
 /* Education Section */
-.education-timeline {
+.education-timeline,
+.experience-timeline {
   position: relative;
   max-width: 800px;
   margin: 0 auto;
 }
 
-.education-timeline::before {
+.education-timeline::before,
+.experience-timeline::before {
   content: '';
   position: absolute;
   left: 30px;
@@ -321,7 +336,7 @@ body {
 
 /* Skills Section */
 .skills-section {
-  background: #f9fafb;
+  background: #ffffff;
 }
 
 .skills-content {
@@ -435,6 +450,17 @@ body {
   margin-bottom: 2rem;
 }
 
+.contact-method-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.contact-method-link:hover {
+  transform: translateY(-2px);
+}
+
 .contact-method {
   display: flex;
   align-items: center;
@@ -442,6 +468,12 @@ body {
   padding: 1rem;
   background: #f9fafb;
   border-radius: 10px;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-method-link:hover .contact-method {
+  background: #e5e7eb;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .contact-icon {
@@ -471,6 +503,9 @@ body {
 }
 
 .social-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
   padding: 0.75rem 1.5rem;
   background: linear-gradient(135deg, #667eea, #764ba2);
   color: white;
@@ -478,11 +513,25 @@ body {
   border-radius: 25px;
   font-weight: 500;
   transition: all 0.3s ease;
+  white-space: nowrap;
 }
 
 .social-link:hover {
   transform: translateY(-2px);
   box-shadow: 0 5px 15px rgba(99, 102, 241, 0.3);
+}
+
+.social-link svg {
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+
+.social-link:hover svg {
+  transform: scale(1.1);
+}
+
+.social-link span {
+  font-size: 0.95rem;
 }
 
 .contact-form {
@@ -668,6 +717,7 @@ body {
   /* Sections */
   .section {
     padding: 3rem 0;
+    scroll-margin-top: 120px;
   }
   
   .container {
@@ -737,6 +787,10 @@ body {
   .social-link {
     padding: 0.75rem 1.25rem;
     font-size: 0.95rem;
+  }
+  
+  .social-link span {
+    font-size: 0.9rem;
   }
   
   /* Forms */
@@ -861,5 +915,10 @@ body {
     width: 100%;
     max-width: 200px;
     text-align: center;
+    justify-content: center;
+  }
+  
+  .social-link span {
+    font-size: 0.85rem;
   }
 }
