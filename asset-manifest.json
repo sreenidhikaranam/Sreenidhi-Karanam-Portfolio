@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/sreenidhi/static/css/main.9ab113f1.css",
-    "main.js": "/sreenidhi/static/js/main.c8fbaf41.js",
-    "static/js/453.078a732c.chunk.js": "/sreenidhi/static/js/453.078a732c.chunk.js",
-    "index.html": "/sreenidhi/index.html",
-    "main.9ab113f1.css.map": "/sreenidhi/static/css/main.9ab113f1.css.map",
-    "main.c8fbaf41.js.map": "/sreenidhi/static/js/main.c8fbaf41.js.map",
-    "453.078a732c.chunk.js.map": "/sreenidhi/static/js/453.078a732c.chunk.js.map"
+    "main.css": "/Sreenidhi-Karanam-Portfolio/static/css/main.9ab113f1.css",
+    "main.js": "/Sreenidhi-Karanam-Portfolio/static/js/main.fae11de5.js",
+    "static/js/453.078a732c.chunk.js": "/Sreenidhi-Karanam-Portfolio/static/js/453.078a732c.chunk.js",
+    "index.html": "/Sreenidhi-Karanam-Portfolio/index.html",
+    "main.9ab113f1.css.map": "/Sreenidhi-Karanam-Portfolio/static/css/main.9ab113f1.css.map",
+    "main.fae11de5.js.map": "/Sreenidhi-Karanam-Portfolio/static/js/main.fae11de5.js.map",
+    "453.078a732c.chunk.js.map": "/Sreenidhi-Karanam-Portfolio/static/js/453.078a732c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9ab113f1.css",
-    "static/js/main.c8fbaf41.js"
+    "static/js/main.fae11de5.js"
   ]
 }
